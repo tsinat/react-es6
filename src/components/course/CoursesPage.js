@@ -7,7 +7,7 @@ class CoursesPage extends React.Component {
         super(props, context);
 
         this.state = {
-            course: {title:'' }
+            course: {title:"" }
         };
         this.onTitleChange = this.onTitleChange.bind(this);
         this.onClickSave = this.onClickSave.bind(this);
@@ -23,7 +23,6 @@ class CoursesPage extends React.Component {
     courseRow(course, index) {
         return <div key="index">{course.title}</div>;
     }
-
     render() {
         return (
             <div>
